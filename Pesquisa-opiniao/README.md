@@ -1,5 +1,8 @@
 # 🤝 Pesquisa de Atendimento com Validação
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
 ## 🎯 Objetivo do Sistema
 
 Este sistema foi desenvolvido como parte do curso técnico de Desenvolvimento de Sistemas (DS_1). O objetivo é auxiliar na coleta de uma **pesquisa de satisfação de atendimento**, registrando nome, idade e opinião dos entrevistados com validações para garantir a consistência dos dados.
