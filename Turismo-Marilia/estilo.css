@@ -1,0 +1,83 @@
+/* Variáveis baseadas no Brasão de Marília */
+:root {
+    --cor-fundo: #F8F9FA;
+    --cor-titulo-azul: #003366;
+    /* Azul do brasão */
+    --cor-detalhe-laranja: #FF8C00;
+    /* Laranja do brasão */
+    --cor-texto: #333333;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+}
+
+/* O título principal da página (H1) */
+.titulo {
+    background-color: var(--cor-titulo-azul);
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Títulos dos atrativos (H2) */
+h2 {
+    color: var(--cor-titulo-azul);
+    border-bottom: 3px solid var(--cor-detalhe-laranja);
+    /* Destaque laranja embaixo */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 22px;
+
+}
+
+/* Ajuste do Container Principal */
+.container-principal {
+    max-width: 1100px;
+    /* Largura boa para desktop */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Linha que segura os dois artigos */
+.linha-atrativos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Cada atrativo */
+.coluna-atrativo {
+    flex: 1;
+    text-align: center;
+    background-color: #ffffff;
+    /* Fundo branco para o "card" */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra leve para dar profundidade */
+}
+
+/* Ajuste das Imagens */
+.coluna-atrativo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+    /* Suaviza o efeito */
+}
