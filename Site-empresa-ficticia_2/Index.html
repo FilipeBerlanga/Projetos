@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>VAPORAPID – Aspirador Automático</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    /* Cores personalizadas baseadas na Identidade Visual da Startup */
+    :root {
+        --azul-escuro: #0B1E36;
+        --verde-neon: #10E78F;
+        --branco: #FFFFFF;
+    }
+
+    /* Definimos a largura da sidebar e cor de fundo usando o azul escuro */
+    .w3-sidebar {
+        width: 120px;
+        background-color: var(--azul-escuro);
+    }
+
+    /* Cores de texto customizadas */
+    .text-verde-neon {
+        color: var(--verde-neon) !important;
+    }
+
+    .bg-azul-escuro {
+        background-color: var(--azul-escuro) !important;
+    }
+
+    .bg-verde-neon {
+        background-color: var(--verde-neon) !important;
+    }
+
+    .hover-neon:hover {
+        color: var(--verde-neon) !important;
+    }
+
+    /* Define Fonte Moderna para todas as tags */
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    #main {
+        margin-left: 120px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0;
+        }
+    }
+
+    /* Divisor customizado */
+    .hr-neon {
+        width: 200px;
+        border: 2px solid var(--verde-neon);
+        margin: 10px auto;
+        opacity: 0.8;
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- SIDEBAR / DIRETRIZ DA AGENDA 15 (HOME, PARCEIROS, FAQ) -->
+    <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small w3-card">
+        <!-- HOME -->
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black hover-neon w3-text-white">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <!-- Serviços -->
+        <a href="#servicos" class="w3-bar-item w3-button w3-padding-large w3-hover-black hover-neon w3-text-white">
+            <i class="fa fa-wrench w3-xxlarge"></i>
+            <p>SERVIÇOS</p>
+        </a>
+        <!-- PARCEIROS -->
+        <a href="#parceiros" class="w3-bar-item w3-button w3-padding-large w3-hover-black hover-neon w3-text-white">
+            <i class="fa fa-handshake-o w3-xxlarge"></i>
+            <p>PARCEIROS</p>
+        </a>
+        <!-- FAQ -->
+        <a href="#faq" class="w3-bar-item w3-button w3-padding-large w3-hover-black hover-neon w3-text-white">
+            <i class="fa fa-comments w3-xxlarge"></i>
+            <p>FAQ</p>
+        </a>
+    </nav>
+
+    <!-- MENU PARA DISPOSITIVOS MÓVEIS -->
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <nav class="w3-bar bg-azul-escuro w3-center w3-small w3-card">
+            <a href="#home" class="w3-bar-item w3-button w3-text-white" style="width:33.33%">HOME</a>
+            <a href="#servicos" class="w3-bar-item w3-button w3-text-white" style="width:33.33%">SERVIÇOS</a>
+            <a href="#parceiros" class="w3-bar-item w3-button w3-text-white" style="width:33.33%">PARCEIROS</a>
+            <a href="#faq" class="w3-bar-item w3-button w3-text-white" style="width:33.33%">FAQ</a>
+        </nav>
+    </div>
+
+    <!-- ÁREA PRINCIPAL DO CONTEÚDO -->
+    <div class="w3-padding-large" id="main">
+
+        <!-- ==================== SEÇÃO 1: HOME ==================== -->
+        <section id="home" class="w3-content w3-padding-64">
+
+            <!-- Cabeçalho Obrigatório -->
+            <header class="w3-container w3-center w3-padding-16">
+                <h1 class="w3-jumbo w3-text-white w3-bold">VAPORAPID</h1>
+                <p class="w3-xlarge text-verde-neon">Limpeza rápida, sem fila, sem sujeira.</p>
+                <div class="w3-padding-16">
+                    <img src="IMG/VaporapidBanner.png" alt="VaporapidBanner" class="w3-image w3-round"
+                        style="max-width:450px; width:100%">
+                </div>
+            </header>
+
+            <!-- Área Principal: História, Missão e Valores -->
+            <div class="w3-container w3-padding-32">
+                <h2 class="text-verde-neon w3-center">Nossa Solução Inteligente</h2>
+                <hr class="hr-neon">
+
+                <p class="w3-large w3-center w3-text-light-grey">
+                    A <strong>VAPORAPID</strong> é uma startup focada em automação de serviços de conveniência.
+                    Nossos totens de aspiradores industriais de alta potência operam 100% de forma autônoma
+                    através de microcontroladores embarcados, permitindo que motoristas limpem seus veículos
+                    instantaneamente.
+                </p>
+
+                <!-- Grid de Missão, Visão e Valores -->
+                <div class="w3-row-padding w3-center w3-margin-top">
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card w3-padding bg-azul-escuro w3-text-white" style="min-height: 200px;">
+                            <i class="fa fa-rocket w3-xlarge text-verde-neon"></i>
+                            <h3>Missão</h3>
+                            <p class="w3-small">Oferecer uma solução prática, rápida e acessível de limpeza automotiva,
+                                permitindo que motoristas mantenham seus veículos limpos sem filas, sem burocracia e com
+                                total autonomia.</p>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card w3-padding bg-azul-escuro w3-text-white" style="min-height: 200px;">
+                            <i class="fa fa-eye w3-xlarge text-verde-neon"></i>
+                            <h3>Visão</h3>
+                            <p class="w3-small">Ser referência nacional em automação de serviços de limpeza automotiva,
+                                expandindo para postos de gasolina em todo o Brasil e tornando-se sinônimo de
+                                conveniência e inovação no cuidado com veículos.Ser referência nacional em automação de
+                                serviços de limpeza automotiva, expandindo para postos de gasolina em todo o Brasil e
+                                tornando-se sinônimo de conveniência e inovação no cuidado com veículos.</p>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <div class="w3-card w3-padding bg-azul-escuro w3-text-white" style="min-height: 200px;">
+                            <i class="fa fa-heart w3-xlarge text-verde-neon"></i>
+                            <h3>Valores</h3>
+                            <p class="w3-small">Inovação tecnológica, respeito ao tempo do cliente, sustentabilidade e
+                                transparência operacional.</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="w3-container w3-center w3-padding-16">
+                    <hr
+                        style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.1); width: 80%; margin: 15px auto;">
+
+                    <p class="w3-small w3-text-grey" style="margin: 0;">
+                        <i class="fa fa-envelope text-verde-neon"></i> contato@vaporapid.com.br &nbsp;|&nbsp;
+                        <i class="fa fa-phone text-verde-neon"></i> (11) 99999-8888 &nbsp;|&nbsp;
+                        <span class="w3-margin-left">
+                            <a href="#" class="w3-text-grey hover-neon w3-margin-right"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="#" class="w3-text-grey hover-neon w3-margin-right"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a href="#" class="w3-text-grey hover-neon"><i class="fa fa-linkedin"></i></a>
+                        </span>
+                    </p>
+                </footer>
+        </section>
+
+        <hr class="w3-opacity">
+
+
+        <!-- ==================== SEÇÃO 2: Serviços ==================== -->
+
+        <section id="servicos" class="w3-content w3-padding-64">
+            <header class="w3-container w3-center w3-padding-16">
+                <h2 class="w3-xlarge w3-text-white w3-bold">VAPORAPID</h2>
+                <p class="w3-medium text-verde-neon">Limpeza rápida, sem fila, sem sujeira.</p>
+            </header>
+            <div class="w3-content w3-section w3-center w3-card-4 bg-azul-escuro w3-round w3-padding-16"
+                style="max-width:550px; margin: 0 auto;">
+
+                <div class="slide">
+                    <img src="IMG/TOTEM.png" alt="Totem Vaporapid" class="w3-image w3-round"
+                        style="width:46%; max-height:320px; object-fit:cover;">
+                    <div class="w3-container w3-padding-16">
+                        <h4 class="text-verde-neon" style="color: #10E78F !important;">1. Totem de Autoatendimento
+                        </h4>
+                        <p class="w3-small w3-text-white" style="color: #ffffff !important;">Interface simples,
+                            intuitiva e pagamento instantâneo via PIX com ativação em segundos.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="IMG/Aspirador.png" alt="Aspirador Alta Potência" class="w3-image w3-round"
+                        style="width:100%; max-height:320px; object-fit:cover;">
+                    <div class="w3-container w3-padding-16">
+                        <h4 class="text-verde-neon" style="color: #10E78F !important;">2. Sucção de Alta Performance
+                        </h4>
+                        <p class="w3-small w3-text-white" style="color: #ffffff !important;">Aspirador com motor
+                            industrial e bocal projetado para alcançar as áreas mais difíceis do veículo.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="IMG/UsoPratico.png" alt="Uso Prático" class="w3-image w3-round"
+                        style="width:50%; max-height:320px; object-fit:cover;">
+                    <div class="w3-container w3-padding-16">
+                        <h4 class="text-verde-neon" style="color: #10E78F !important;">3. Praticidade no Seu Tempo
+                        </h4>
+                        <p class="w3-small w3-text-white" style="color: #ffffff !important;">Sem intermediários ou
+                            filas. Você mesmo escolhe o tempo ideal (3, 5 ou 10 minutos) e executa.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="IMG/Disponibilidade24h.png" alt="Disponibilidade 24h" class="w3-image w3-round"
+                        style="width:50%; max-height:320px; object-fit:cover;">
+                    <div class="w3-container w3-padding-16">
+                        <h4 class="text-verde-neon" style="color: #10E78F !important;">4. Operação Contínua 24h</h4>
+                        <p class="w3-small w3-text-white" style="color: #ffffff !important;">Sistemas monitorados
+                            remotamente via IoT nos postos parceiros, operando dia e noite.</p>
+                    </div>
+                </div>
+            </div>
+            <footer class="w3-container w3-center w3-padding-16">
+                <hr
+                    style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.1); width: 80%; margin: 15px auto;">
+
+                <p class="w3-small w3-text-grey" style="margin: 0;">
+                    <i class="fa fa-envelope text-verde-neon"></i> contato@vaporapid.com.br &nbsp;|&nbsp;
+                    <i class="fa fa-phone text-verde-neon"></i> (11) 99999-8888 &nbsp;|&nbsp;
+                    <span class="w3-margin-left">
+                        <a href="#" class="w3-text-grey hover-neon w3-margin-right"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="w3-text-grey hover-neon w3-margin-right"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="w3-text-grey hover-neon"><i class="fa fa-linkedin"></i></a>
+                    </span>
+                </p>
+            </footer>
+        </section>
+        <hr class="w3-opacity">
+
+        <!-- ==================== SEÇÃO 3: PARCEIROS ==================== -->
+        <section id="parceiros" class="w3-content w3-padding-64">
+
+            <header class="w3-container w3-center w3-padding-16">
+                <h2 class="w3-xlarge w3-text-white">VAPORAPID</h2>
+                <p class="w3-medium text-verde-neon">Limpeza rápida, sem fila, sem sujeira.</p>
+            </header>
+
+            <div class="w3-container w3-padding-32 w3-center">
+                <h2 class="text-verde-neon">Nossos Parceiros Estratégicos</h2>
+                <hr class="hr-neon">
+                <p class="w3-text-light-grey">Estamos presentes nas principais redes de postos de combustíveis e
+                    estacionamentos parceiros:</p>
+
+                <div class="w3-row w3-margin-top">
+                    <div class="w3-quarter w3-padding">
+                        <div class="w3-card bg-azul-escuro w3-padding-16 w3-round" style="min-height: 220px;">
+                            <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
+                                <img src="IMG/posto_ipiranga.jpg" alt="Posto Ipiranga" class="w3-image w3-round"
+                                    style="max-height: 100px; max-width: 90%;">
+                            </div>
+                            <p class="w3-bold w3-text-white w3-margin-top">Rede Ipiranga</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-quarter w3-padding">
+                        <div class="w3-card bg-azul-escuro w3-padding-16 w3-round" style="min-height: 220px;">
+                            <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
+                                <img src="IMG/posto_shell.jpeg" alt="Posto Shell" class="w3-image w3-round"
+                                    style="max-height: 100px; max-width: 90%;">
+                            </div>
+                            <p class="w3-bold w3-text-white w3-margin-top">Rede Shell</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-quarter w3-padding">
+                        <div class="w3-card bg-azul-escuro w3-padding-16 w3-round" style="min-height: 220px;">
+                            <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
+                                <img src="IMG/Posto_Petrobras.png" alt="Posto Petrobras" class="w3-image w3-round"
+                                    style="max-height: 100px; max-width: 90%;">
+                            </div>
+                            <p class="w3-bold w3-text-white w3-margin-top">Rede Petrobras</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-quarter w3-padding">
+                        <div class="w3-card bg-azul-escuro w3-padding-16 w3-round" style="min-height: 220px;">
+                            <div style="height: 120px; display: flex; align-items: center; justify-content: center;">
+                                <img src="IMG/estacionamento.jpg" alt="Estacionamento Parceiro"
+                                    class="w3-image w3-round" style="max-height: 100px; max-width: 90%;">
+                            </div>
+                            <p class="w3-bold w3-text-white w3-margin-top">Estacionamentos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="w3-container w3-center w3-padding-16">
+                <hr
+                    style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.1); width: 80%; margin: 15px auto;">
+
+                <p class="w3-small w3-text-grey" style="margin: 0;">
+                    <i class="fa fa-envelope text-verde-neon"></i> contato@vaporapid.com.br &nbsp;|&nbsp;
+                    <i class="fa fa-phone text-verde-neon"></i> (11) 99999-8888 &nbsp;|&nbsp;
+                    <span class="w3-margin-left">
+                        <a href="#" class="w3-text-grey hover-neon w3-margin-right"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="w3-text-grey hover-neon w3-margin-right"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="w3-text-grey hover-neon"><i class="fa fa-linkedin"></i></a>
+                    </span>
+                </p>
+            </footer>
+        </section>
+        <hr class="w3-opacity">
+
+        <!-- ==================== SEÇÃO 4: FAQ ==================== -->
+        <section id="faq" class="w3-content w3-padding-64">
+
+            <!-- Cabeçalho Obrigatório repetido -->
+            <header class="w3-container w3-center w3-padding-16">
+                <h2 class="w3-xlarge w3-text-white">VAPORAPID</h2>
+                <p class="w3-medium text-verde-neon">Limpeza rápida, sem fila, sem sujeira.</p>
+            </header>
+
+            <!-- Área Principal: Perguntas Frequentes -->
+            <div class="w3-container w3-padding-32">
+                <h2 class="text-verde-neon w3-center">Perguntas Frequentes (FAQ)</h2>
+                <hr class="hr-neon">
+
+                <div class="w3-responsive" style="max-width: 800px; margin: 0 auto;">
+
+                    <div class="w3-panel w3-leftbar w3-border-green bg-azul-escuro w3-padding">
+                        <p class="w3-text-white w3-bold">1. Como funciona a ativação do aspirador?</p>
+                        <p class="w3-text-light-grey w3-small">Basta apertar o botão do tempo de uso desejado, apontara
+                            câmera do celular para o QR Code impresso na tela, realizar o pagamento Pix do valor do
+                            tempo escolhido e o sistema ligará o aspirador instantaneamente.</p>
+                    </div>
+
+                    <div class="w3-panel w3-leftbar w3-border-green bg-azul-escuro w3-padding">
+                        <p class="w3-text-white w3-bold">2. O que acontece se o meu tempo acabar antes de terminar a
+                            limpeza?</p>
+                        <p class="w3-text-light-grey w3-small">O sistema desligará o motor automaticamente. Se
+                            necessitar de mais tempo, basta realizar um novo pagamento rápido via PIX para reativar o
+                            contador por minutos.</p>
+                    </div>
+
+                    <div class="w3-panel w3-leftbar w3-border-green bg-azul-escuro w3-padding">
+                        <p class="w3-text-white w3-bold">3. Os totens funcionam em quais horários?</p>
+                        <p class="w3-text-light-grey w3-small">Como nosso sistema é 100% automatizado por IoT e não
+                            necessita de funcionários locais, a operação fica disponível 24 horas por dia acompanhando o
+                            funcionamento do posto parceiro.</p>
+                    </div>
+
+                    <div class="w3-panel w3-leftbar w3-border-green bg-azul-escuro w3-padding">
+                        <p class="w3-text-white w3-bold">4. Tive um problema com o pagamento. Como estornar?</p>
+                        <p class="w3-text-light-grey w3-small">Nossa central gerencia os pagamentos em tempo real. Você
+                            pode preencher o formulário de contato abaixo ou nos enviar um e-mail com o comprovante para
+                            suporte imediato.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Formulário de Contato Adicional Integrado ao FAQ -->
+            <div class="w3-container w3-padding-32" style="max-width:600px; margin: 0 auto;">
+                <p class="w3-center w3-text-white">Ainda tem dúvidas? Envie uma mensagem:</p>
+                <form action="#" method="POST">
+                    <p><input class="w3-input w3-padding-16 w3-border w3-round" type="text" placeholder="Seu Nome"
+                            required name="Nome"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border w3-round" type="email" placeholder="Seu Email"
+                            required name="Email"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border w3-round" type="text" placeholder="Mensagem"
+                            required name="Mensagem"></p>
+                    <p class="w3-center">
+                        <button
+                            class="w3-button bg-verde-neon w3-text-black w3-padding-large w3-round w3-bold hover-neon"
+                            type="submit">
+                            <i class="fa fa-paper-plane"></i> ENVIAR SUPORTE
+                        </button>
+                    </p>
+                </form>
+            </div>
+
+            <!-- Rodapé da Seção FAQ -->
+            <footer class="w3-container w3-padding-32 bg-azul-escuro w3-center w3-round">
+                <p class="w3-medium text-verde-neon">Suporte Técnico VAPORAPID</p>
+                <p class="w3-small w3-text-white">
+                    <i class="fa fa-envelope"></i> suporte@vaporapid.com.br &nbsp;|&nbsp;
+                    <i class="fa fa-phone"></i> (11) 99999-8888
+                </p>
+                <div class="w3-xlarge w3-padding-16">
+                    <a href="https://facebook.com" target="_blank" class="w3-text-white hover-neon w3-margin-right"><i
+                            class="fa fa-facebook-official"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="w3-text-white hover-neon w3-margin-right"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="w3-text-white hover-neon"><i
+                            class="fa fa-linkedin"></i></a>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <script>
+        var index = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            // Oculta todos os slides
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++;
+            // Se chegar ao fim, volta para o primeiro
+            if (index > x.length) { index = 1 }
+            // Mostra o slide atual
+            x[index - 1].style.display = "block";
+            // Configura o tempo de transição (5000ms = 5 segundos)
+            setTimeout(carousel, 5000);
+        }
+    </script>
+</body>
+
+</html>
