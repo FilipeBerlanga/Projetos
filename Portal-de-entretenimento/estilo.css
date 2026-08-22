@@ -1,0 +1,73 @@
+body {
+    /* Estilo de fundo escuro do portal */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    /* Cabeçalhos de cada seção em tom ciano para destaque */
+    color: rgb(0, 225, 255);
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    text-align: justify;
+    /* Deixa o texto alinhado dos dois lados */
+    margin: 0;
+}
+
+#main {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+}
+
+.container-principal {
+    /* Container principal em layout flex, alinha as seções lado a lado */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.filmes {
+    flex-grow: 1;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.musica {
+    flex-grow: 2;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.games {
+    flex-grow: 1;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+img {
+    width: 30vw;
+    height: 15vw;
+    object-fit: cover;
+    /* display: block; */
+    border: 10px solid rgb(0, 0, 0);
+}
+
+.card-entretenimento {
+    width: 30vw;
+    /* Mesma largura que você escolheu para a imagem */
+    border: 2px solid #000000;
+    /* Uma borda sutil para o conjunto todo */
+    padding: 2px;
+    /* Espaço entre o conteúdo e a borda */
+    margin: 10px auto;
+    /* Centraliza o card na tela */
+    background-color: #000000;
+}
